@@ -1,5 +1,3 @@
-￼
-
 $(document).ready(function(){
 	
 	console.log("aqui estoy");
@@ -24,22 +22,24 @@ $(document).ready(function(){
 		console.log(anio);
 		console.log(factor);
 		// ../
-
-		nombreArchivo = " "
-
-		if(valor=='Precipitation'){
+		nombreArchivo = "";
+		if (factor =="precipitation"){
 			nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
-			console.log(nombreArchivo);
-		}else if (valor=='Temperature'){
+			console.log("hereeeeee");
+		}if (factor =="temperature"){
 			nombreArchivo = "temperature/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
-			console.log(nombreArchivo);
-		}else if(valor=='Fine particulate matter'){
+			console.log("hereeeeee");
+		}
+
+
+		if (factor =="matter"){
 			nombreArchivo = "matter/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
-			console.log(nombreArchivo);
+			console.log("hereeeeee");
 		}
+		
 
 		
 
