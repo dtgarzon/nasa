@@ -8,7 +8,9 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+#logo{
+  width: 70px;
+}
 body {
   height: 100%;
 }
@@ -341,6 +343,7 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
   color: #777;
 }
 
+
 footer.sticky-footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -372,4 +375,8 @@ body.sidebar-toggled footer.sticky-footer {
   body.sidebar-toggled footer.sticky-footer {
     width: calc(100% - 90px);
   }
+}
+
+.boxes{
+    margin-left: 200px;
 }
