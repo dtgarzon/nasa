@@ -20,7 +20,12 @@ $(document).ready(function(){
 		// algo mas....
 		console.log(valor);
 		// ../
-		nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
+
+		if(valor=='Precipitation'){
+			nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
+		}else if (valor=='Temperature'){
+			nombreArchivo = "temperature/" + factor + "_" + anio + "_" + valor + ".html"; 
+		}
 
 		$("#charExample").load(nombreArchivo);
 
