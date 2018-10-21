@@ -1,3 +1,5 @@
+￼
+
 $(document).ready(function(){
 	
 	console.log("aqui estoy");
@@ -19,17 +21,29 @@ $(document).ready(function(){
 		//factor = //
 		// algo mas....
 		console.log(valor);
+		console.log(anio);
+		console.log(factor);
 		// ../
+
+		nombreArchivo = " "
 
 		if(valor=='Precipitation'){
 			nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
+			$("#charExample").load(nombreArchivo);
+			console.log(nombreArchivo);
 		}else if (valor=='Temperature'){
 			nombreArchivo = "temperature/" + factor + "_" + anio + "_" + valor + ".html"; 
+			$("#charExample").load(nombreArchivo);
+			console.log(nombreArchivo);
+		}else if(valor=='Fine particulate matter'){
+			nombreArchivo = "matter/" + factor + "_" + anio + "_" + valor + ".html"; 
+			$("#charExample").load(nombreArchivo);
+			console.log(nombreArchivo);
 		}
 
-		$("#charExample").load(nombreArchivo);
+		
 
-		console.log(nombreArchivo);
+	
 
 		// $("#charExample").attr("src", "./img/plot.jpeg");
 
