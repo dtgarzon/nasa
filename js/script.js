@@ -29,13 +29,10 @@ $(document).ready(function(){
 			nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
 			$("#charExample3").html("<img src='gifs/precipitation.gif' > ");
-			
-			console.log("hereeeeee");
 		}if (factor =="temperature"){
 			nombreArchivo = "temperature/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
 			$("#charExample3").html("<img src='gifs/temperature.gif' > ");
-			console.log("hereeeeee");
 		}
 
 
@@ -43,7 +40,7 @@ $(document).ready(function(){
 			nombreArchivo = "matter/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
 			$("#charExample3").html("<img src='gifs/matter.gif' > ");
-			console.log("hereeeeee");
+		
 		}
 		
 
@@ -61,6 +58,7 @@ $(document).ready(function(){
 		anio = $("#anno").val();
 		enf = $("#enfermedad").val();
 		nombreArchivo2= "";
+		
 		if(enf =="malaria"){
 			nombreArchivo2 = "correlaciones/malaria/" + factor + "_" + anio + ".html";	
 			$("#charExample2").load(nombreArchivo2);
@@ -73,7 +71,6 @@ $(document).ready(function(){
 			nombreArchivo2 = "correlaciones/tuberculosis/" + factor + "_" + anio + ".html";	
 			$("#charExample2").load(nombreArchivo2);
 		}
-
 	});
 	
 
