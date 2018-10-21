@@ -4,14 +4,6 @@ Chart.defaults.global.defaultFontColor = '#292b2c';
 
 // Area Chart Example
 
-var img1=document.getElementById("charExample1");
-img1.src = "./img/plot.jpeg";
-
-//document.body.appendChild(img1);
-
-
-var img2=document.getElementById("charExample2");
-img2.src = ""
 
 var ctx = document.getElementById("myAreaChart");
 

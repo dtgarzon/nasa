@@ -26,10 +26,13 @@ $(document).ready(function(){
 		if (factor =="precipitation"){
 			nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
+			$("#charExample3").load("gifs/precipitation.gif");
+			
 			console.log("hereeeeee");
 		}if (factor =="temperature"){
 			nombreArchivo = "temperature/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
+			$("#charExample3").load("gifs/temperature.gif");
 			console.log("hereeeeee");
 		}
 
@@ -37,6 +40,7 @@ $(document).ready(function(){
 		if (factor =="matter"){
 			nombreArchivo = "matter/" + factor + "_" + anio + "_" + valor + ".html"; 
 			$("#charExample").load(nombreArchivo);
+			$("#charExample3").load("gifs/matter.gif");
 			console.log("hereeeeee");
 		}
 		

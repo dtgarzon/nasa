@@ -4,6 +4,10 @@
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-sb-admin/blob/master/LICENSE)
  */
 
+.charExample{
+    height: 300px !important;
+    width: 300px !important;
+  }
 html {
   position: relative;
   min-height: 100%;
@@ -11,8 +15,10 @@ html {
 #logo{
   width: 70px;
 }
-body {
-  height: 100%;
+body, #page-top {
+  height: 100% !important;
+  width: 100% !important;
+  min-width: 100% !important;
 }
 
 #wrapper {
