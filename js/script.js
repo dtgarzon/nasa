@@ -20,7 +20,7 @@ $(document).ready(function(){
 		// algo mas....
 		console.log(valor);
 		// ../
-		nombreArchivo = "precipitacion/" + factor + "_" + anio + "_" + valor + ".html"; 
+		nombreArchivo = "precipitation/" + factor + "_" + anio + "_" + valor + ".html"; 
 
 		$("#charExample").load(nombreArchivo);
 
